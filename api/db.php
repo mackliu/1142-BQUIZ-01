@@ -110,7 +110,7 @@ Class DB{
 
     }
 
-    function delete($id){
+    function del($id){
         $sql="DELETE from `$this->table` ";
                 if(is_array($id)){
                     //多條件
