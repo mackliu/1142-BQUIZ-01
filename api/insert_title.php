@@ -6,7 +6,16 @@ if(!empty($_FILES['img']['tmp_name'])){
     $_POST['img']=$_FILES['img']['name'];
 }
 
-$_POST['sh']=1;
+//$countSH=$Title->count(['sh'=>1]);
+
+/* if($countSH==0){
+    $_POST['sh']=1;
+}else{
+    $_POST['sh']=0; 
+} */
+
+$_POST['sh']=($Title->count(['sh'=>1])==0)?1:0;
+
 
 $Title->save($_POST);
 
