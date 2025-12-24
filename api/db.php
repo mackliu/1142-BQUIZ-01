@@ -148,4 +148,5 @@ function to($url){
 }
 
 
+$Title=new DB('title');
 ?>
