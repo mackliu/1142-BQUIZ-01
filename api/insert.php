@@ -11,10 +11,12 @@ if(!empty($_FILES['img']['tmp_name'])){
 
 switch($table){
     case "title":
-        $_POST['sh']=($DB->count(['sh'=>1])==0)?1:0;
-        break;
+        $_POST['sh']=($DB->count(['sh'=>1])==0)?1:0;    
+    break;
     default:
-        $_POST['sh']=1;
+        if($table!='admin'){
+            $_POST['sh']=1;
+        }
 
     }        
 

@@ -12,6 +12,7 @@ switch($table){
     break;
     case "admin":
         $ids=array_keys($_POST['acc']);
+    break;
     default:
         $ids=array_keys($_POST['text']);
     
