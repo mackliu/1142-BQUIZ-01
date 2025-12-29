@@ -1,9 +1,9 @@
-<div class="cent">更新圖片</div>
+<div class="cent">更換圖片</div>
 <hr>
 <form action="./api/update.php?table=<?=$_GET['table'];?>" method="post" enctype="multipart/form-data">
     <table style="width:70%;margin:auto">
         <tr>
-            <td>標題區圖片</td>
+            <td>校園映像圖片</td>
             <td><input type="file" name="img" id=""></td>
         </tr>
         <tr>
