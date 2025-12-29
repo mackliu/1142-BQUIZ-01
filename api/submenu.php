@@ -1,6 +1,5 @@
 <?php include_once "db.php";
 
-
 //編輯次選單
 if(!empty($_POST['text'])){
     foreach($_POST['text'] as $id => $text){
@@ -16,8 +15,6 @@ if(!empty($_POST['text'])){
 
     }
 }
-
-
 
 //新增次選單
 if(!empty($_POST['new_text'])){
