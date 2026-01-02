@@ -87,11 +87,8 @@
                     onclick="lo(&#39;?do=admin&#39;)">管理登入</button>
                 <div style="width:89%; height:480px;" class="dbor">
                     <span class="t botli">校園映象區</span>
-                    <div class='btn' onclick="pp(1)">
-                        <img src="icon/up.jpg" alt="" srcset="">
-                    </div>
+                    <div class='btn' onclick="pp(1)"><img src="icon/up.jpg" alt="" srcset=""></div>
                     <div>
-
                     <?php 
                        $images=$Image->all(['sh'=>1]);
                        foreach($images as $key => $img){
@@ -100,14 +97,9 @@
 
                         echo "</div>";
                        }
-
-
                     ?>
-
                     </div>
-                    <div  class='btn' onclick="pp(2)">
-                        <img src="icon/dn.jpg" alt="" srcset="">
-                    </div>
+                    <div  class='btn' onclick="pp(2)"><img src="icon/dn.jpg" alt="" srcset=""></div>
                     <script>
                     var nowpage = 0,
                         num = <?=count($images)?>;
