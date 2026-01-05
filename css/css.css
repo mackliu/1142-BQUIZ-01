@@ -83,11 +83,17 @@ body
 	background:url(../icon/menu2.fw.png) center no-repeat;
 	background-size:cover;
 }
+/*將<a>改成block,以塞滿整個div容器空間,讓整個按鈕都可以被點選*/
+.mainmu a{
+	display:block;
+}
+/*做為次選單的容器,並有向右突出的位移及預設不顯示*/
 .mw{
 	position: relative;
 	z-index:10;
 	left:150px;
 	top:-15px;
+	display:none;
 }
 .mainmu2
 {
