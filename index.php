@@ -42,6 +42,21 @@
                 <div id="menuput" class="dbor">
                     <!--主選單放此-->
                     <span class="t botli">主選單區</span>
+                    <?php
+                        $mains=$Menu->all(['main_id'=>0]);
+                        foreach($mains as $main){
+                            echo "<a href='{$main['href']}'>";
+                            echo "<div class='mainmu'>{$main['text']}";
+                                echo "<div class='mw'><a href='123'>HI 1</a></div>";
+                                echo "<a href='456'><div class='mw'>HI 2</div></a>";
+                            
+                            echo "</div>";
+                            echo "</a>";
+                        }
+                    ?>
+
+
+
                 </div>
                 <div class="dbor" style="margin:3px; width:95%; height:20%; line-height:100px;">
                     <span class="t">進站總人數 :
